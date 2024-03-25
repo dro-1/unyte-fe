@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
   const { cartProducts } = useContext(ProductContext) as ProductContextType;
   return (
-    <nav className="flex justify-between items-center">
+    <nav className="flex justify-between items-center max-w-[600px] mx-auto">
       <Link to="/">
         <div>
           <img src={home} className="w-8" />

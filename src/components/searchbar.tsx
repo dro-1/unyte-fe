@@ -11,7 +11,7 @@ export const Searchbar = () => {
   const { searchProducts } = useContext(ProductContext) as ProductContextType;
 
   return (
-    <div className="bg-white mt-4 rounded-lg flex">
+    <div className="bg-white mt-4 rounded-lg flex max-w-[600px] mx-auto">
       <input
         placeholder="Search"
         className="rounded-lg outline-none p-2 w-full"

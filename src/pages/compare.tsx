@@ -94,7 +94,10 @@ export const Compare = () => {
           ))}
         </div>
       </Modal>
-      <div className="flex h-auto">
+      <h1 className="text-center text-6xl font-bold my-4 text-[#232f3e]">
+        Compare
+      </h1>
+      <div className="flex h-auto max-w-[1000px] mx-auto">
         <Slide
           product={leftProduct}
           type="left"

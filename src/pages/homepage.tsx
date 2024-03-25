@@ -22,7 +22,7 @@ export const Homepage = () => {
         {isLoading ? (
           <Loader />
         ) : (
-          <div>
+          <div className="min-[1000px]:grid min-[1000px]:grid-cols-2 min-[1000px]:max-w-[1000px] min-[1000px]:mx-auto">
             {filteredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}

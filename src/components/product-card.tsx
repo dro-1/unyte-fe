@@ -14,10 +14,10 @@ export const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   const { addProductToCart } = useContext(ProductContext) as ProductContextType;
   const navigate = useNavigate();
   return (
-    <div className="flex items-center my-2 px-6 h-[200px]">
-      <div className="bg-slate-100 p-4 w-[50%] self-stretch relative">
+    <div className="flex items-center my-2 px-6 h-[200px] max-w-[500px] mx-auto">
+      <div className="bg-slate-100 p-4 w-[50%] self-stretch min-[370px]:self-normal relative">
         <img
-          className="relative top-[50%] -translate-y-[50%]"
+          className="relative top-[50%] -translate-y-[50%] w-[80%] max-h-[165px] mx-auto object-contain"
           src={product.image}
         />
       </div>
